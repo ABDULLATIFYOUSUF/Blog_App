@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import {BASE_URI} from "../config/index"
 import axios from 'axios'
 import UserBlog from "../components/UserBlog.jsx"
+import { BASE_URI } from '../config/index.js';
 
 function MyBlogs() {
   const [blogs, setBlogs] = useState([]);

@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import {BASE_URI} from "../config/index"
 import toast from 'react-hot-toast'
+import { BASE_URI } from '../config'
 
 function Card({
     title,

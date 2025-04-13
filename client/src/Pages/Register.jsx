@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
-import { BASE_URI } from "../config/index";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { BASE_URI } from "../config";
 
 function Register() {
   const navigate = useNavigate();

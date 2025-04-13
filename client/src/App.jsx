@@ -1,6 +1,4 @@
 import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";

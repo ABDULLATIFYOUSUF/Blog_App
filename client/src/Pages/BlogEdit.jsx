@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import { BASE_URI } from "../config/index";
 import toast from "react-hot-toast";
+import { BASE_URI } from "../config";
 
 function BlogEdit() {
   const [image, setImage] = useState(null);

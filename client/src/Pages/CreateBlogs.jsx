@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { BASE_URI } from '../config/index';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { BASE_URI } from '../config';
 
 function CreateBlogs() {
   const navigate = useNavigate();

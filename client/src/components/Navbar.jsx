@@ -13,8 +13,9 @@ function Navbar() {
     navigate("/");
   };
   const getUserById = async () => {
-    try {
+    
       if(login){
+        try {
         const { data } = await axios.get(
           `${BASE_URI}/api/v1/user/get_user/${login}`
         );
@@ -22,10 +23,10 @@ function Navbar() {
           setName(data.user.username);
           setImage(data.user.image)
         }
+      } catch (error) {
+        console.log(error);
       }
-    } catch (error) {
-      console.log(error);
-    }
+      }
   };
   useEffect(() => {
     getUserById();

@@ -14,12 +14,14 @@ function Navbar() {
   };
   const getUserById = async () => {
     try {
-      const { data } = await axios.get(
-        `${BASE_URI}/api/v1/user/get_user/${login}`
-      );
-      if (data.success) {
-        setName(data.user.username);
-        setImage(data.user.image)
+      if(login){
+        const { data } = await axios.get(
+          `${BASE_URI}/api/v1/user/get_user/${login}`
+        );
+        if (data.success) {
+          setName(data.user.username);
+          setImage(data.user.image)
+        }
       }
     } catch (error) {
       console.log(error);

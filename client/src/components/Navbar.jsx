@@ -6,7 +6,7 @@ import { BASE_URI } from "../config";
 function Navbar() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
-  const login = localStorage.getItem("user");
+  const login = JSON.parse(localStorage.getItem("user"));;
   const navigate = useNavigate();
   const logoutBtn = () => {
     localStorage.clear();

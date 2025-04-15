@@ -20,7 +20,7 @@ function Login() {
         password,
       });
       if (data.success) {
-        localStorage.setItem("user", JSON.stringify(data.user._id)); // save full object
+        localStorage.setItem("user", JSON.stringify(data.user)); // save full object
         toast.success("User Login Successfully");
         setTimeout(() => {
           navigate("/");
